@@ -1,0 +1,106 @@
+{
+  "name": "Friend",
+  "theme": "rune",
+  "prompt": "two",
+  "banner": true,
+  "animate": true,
+  "animate_ms": 12,
+  "live_banner": true,
+  "live_seconds": 0,
+  "look": "classic",
+  "look_admin": "classic",
+  "look_panels": [
+    "status",
+    "cores",
+    "net",
+    "procs",
+    "drives",
+    "weather",
+    "recent",
+    "log",
+    "pinned",
+    "running"
+  ],
+  "emblem_pulse": true,
+  "emblem_pulse_seconds": 2.4,
+  "mouse": true,
+  "art": "rune",
+  "art_admin": "elevated",
+  "art_style": "braille",
+  "art_size": "auto",
+  "emblem_picture": false,
+  "show_status": true,
+  "show_cpu": true,
+  "show_gpu": true,
+  "show_net": true,
+  "show_git": true,
+  "show_graphs": true,
+  "warnings": true,
+  "warn_disk_free_percent": 10,
+  "warn_ram_percent": 92,
+  "warn_uptime_days": 14,
+  "startup_sound": "default",
+  "admin_sound": "default",
+  "error_hints": true,
+  "suggestions": "list",
+  "long_command_seconds": 30,
+  "long_command_sound": "default",
+  "long_command_popup": true,
+  "long_command_always": false,
+  "long_command_ignore": [
+    "live",
+    "path",
+    "ssh"
+  ],
+  "pins": [
+    {
+      "key": "docs",
+      "label": "Documents",
+      "path": "~\\Documents",
+      "color": "#5fd4ff"
+    },
+    {
+      "key": "dl",
+      "label": "Downloads",
+      "path": "~\\Downloads",
+      "color": "#ffb36b"
+    },
+    {
+      "key": "emblem",
+      "label": "Switch emblem",
+      "command": "emblem"
+    }
+  ],
+  "tips": [
+    "go <name> jumps to a pinned folder (Tab completes the name)",
+    "Ctrl+R searches the commands you typed before",
+    "admin opens an Administrator terminal (Windows asks first)",
+    "reload re-reads this file and your colours",
+    "Ctrl+Alt+T opens a terminal from anywhere",
+    "status shows the PC panel again, banner shows everything",
+    "the PC status is live when a terminal opens; press any key to start typing (live opens the bigger dashboard)",
+    "z docs jumps to any folder you have used (z with no letters lists them)",
+    "apps start notepad  /  apps stop all  (the apps list is in this file)",
+    "weather city <your city> shows today's weather in the banner; Win + the key under Esc drops a terminal from the top",
+    "emblem switches this window's emblem; emblem picture on draws it as a real picture (Windows Terminal 1.22+)",
+    "sounds: startup_sound and admin_sound in my-terminal.json take default, off, a Windows sound like tada.wav, or your own .wav file",
+    "errors: when a command fails, a line under the red text says what it means; turn it off with error_hints false in my-terminal.json",
+    "suggestions: type a letter and a list of your earlier commands shows up; Down arrow walks into it, Tab opens a menu of every match, F2 switches style",
+    "slow commands: a sound and a pop-up tell you when a command that took over 30 seconds finishes while you are in another window; longdone 20 changes the time, longdone test plays it",
+    "looks: look switches the welcome screen (centre, wall, middle, classic); look panels / look add git choose the boxes",
+    "mouse: on the live welcome screen click a pinned folder or a recent project to go there, or a tool to start it; \"mouse\": false in my-terminal.json turns it off"
+  ],
+  "apps": [
+    {
+      "name": "Notepad",
+      "match": "notepad\\.exe",
+      "expected": false,
+      "run": [
+        "notepad.exe"
+      ],
+      "path": "%USERPROFILE%"
+    }
+  ],
+  "glow": true,
+  "weather": true
+}

@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# your own settings (copied from my-terminal.example.json the first time the profile runs)
+my-terminal.json
